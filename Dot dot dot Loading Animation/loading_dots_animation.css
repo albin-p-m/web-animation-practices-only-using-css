@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.dot1{
+    background: #e74c3c;
+    animation: dot1_animation 1s infinite;
+}
+
+.dot2{
+    background: #3498db;
+    animation: dot2_animation 1s infinite;
+}
+
+.dot3{
+    background: #27ae60;
+    animation: dot3_animation 1s infinite;
+}
+
+@keyframes dot1_animation {
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes dot2_animation {
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes dot3_animation {
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}

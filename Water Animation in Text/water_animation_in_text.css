@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./pexels-eberhard-grossgasteiger-443446.jpg) no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle h1{
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000e8a36;
+    background-image: url(./vector-free-water-with-bubbles-and-fizz-background1.jpg);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    background-size: cover;
+    animation: water 15s infinite;
+}
+
+@keyframes water {
+    from{
+        background-position: left 0 top 0;
+    }
+    to{
+        background-position: left 1000px top 0;
+    }
+}
