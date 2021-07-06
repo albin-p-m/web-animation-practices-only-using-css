@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #313131;
+}
+
+.box span{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #34495e;
+    animation: load 4s infinite;
+}
+
+@keyframes load {
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(150%, 0);
+    }
+    50%{
+        transform: translate(150%, 150%);
+    }
+    75%{
+        transform: translate(0, 150%);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
